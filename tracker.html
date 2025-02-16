@@ -1,0 +1,62 @@
+{% extends 'layout.html' %} {% block content %}
+<h1>Study Suggestions</h1>
+
+<form method="POST" action="{{ url_for('submit') }}">
+    <fieldset>
+    <legend>
+        <h2>Mood & Time Tracker</h2>
+    </legend>
+    <label for="mood" id="label-mood">
+        Rate your mood from a scale of 1 to 10:
+    </label>
+    
+    <!-- Dropdown options -->
+    <select name="mood" id="mood">
+        <option value="one">1</option>
+        <option value="two">2</option>
+        <option value="three">3</option>
+        <option value="four">4</option>
+        <option value="five">5</option>
+        <option value="six">6</option>
+        <option value="seven">7</option>
+        <option value="eight">8</option>
+        <option value="nine">9</option>
+        <option value="ten">10</option>
+    </select>
+
+    <br>
+    
+    <label for="sleep" id="label-sleep">
+        What times do you sleep?
+    </label>
+
+    <legend>
+        Start Time: 
+        <input type="time" name="start_sleep">
+    </legend>
+
+    <legend>
+        End Time: 
+        <input type="time" name="end_sleep">
+    </legend>
+
+    <label for="work" id="work-sleep">
+        What times do you have work or other activities?
+    </label>
+
+    <legend>
+        Start Time: 
+        <input type="time" name="start_work">
+    </legend>
+
+    <legend>
+        End Time: 
+        <input type="time" name="end_work">
+    </legend>
+
+    <button type="submit" value="submit">
+        Submit
+    </button>
+</fieldset>
+</form>
+{% endblock %}

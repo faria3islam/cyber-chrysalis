@@ -1,0 +1,14 @@
+{% extends 'layout.html' %} {% block content %}
+<h1>Study Suggestions</h1>
+<ul>
+    {% for suggestion in suggestions %}
+        <li>{{ suggestion }}</li>
+    {% endfor %}
+</ul>
+<h2>Suggested Study Times</h2>
+<ul>
+    {% for time in study_times %}
+        <li>{{ time }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
