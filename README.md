@@ -1,2 +1,1 @@
-# cyber-chrysalis
-WinHacks 2025
+'Zeki' is a Turkish word derived from Arabic, meaning 'smart'. A powerful study tool to make your study sessions efficient. Zeki creates personalized study timings for you by taking into account your sleep, your mood and work hours. It allows you to create a list of everyday tasks to stay on top of your deadlines.
